@@ -1,0 +1,208 @@
+/* Global styles for font and background */
+body {
+    font-family: 'Roboto', sans-serif;  /* Clean modern font */
+    background-color: #f1f5f9;  /* Light background to make the form stand out */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  /* Container for the form */
+  form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  /* Form Title */
+  h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  /* Form Group for each input */
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Label Styling */
+  label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Required asterisk styling */
+  .required-asterisk {
+    color: #f44336;
+    font-weight: bold;
+  }
+  
+  /* Input Fields and Textarea Styling */
+  .form-control {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focused state for inputs */
+  .form-control:focus {
+    border-color: #4CAF50;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #f44336;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+  }
+  
+  /* Submit Button Styling */
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button hover effect */
+  button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+  }
+  
+  /* Button active state */
+  button[type="submit"]:active {
+    background-color: #388e3c;
+    transform: translateY(1px);
+  }
+  
+  /* Form Reset Button (if added) */
+  button[type="reset"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #f44336;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Reset button hover effect */
+  button[type="reset"]:hover {
+    background-color: #e53935;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    .form-control {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    button[type="submit"] {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For very small screens (mobile) */
+    form {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-control {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  
+    button[type="submit"] {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Input Placeholder Styling */
+  .form-control::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Success Message Styling (if needed) */
+  .success {
+    color: #4CAF50;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+  }
+
+  .form-control:focus {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.01);
+  }
+  
+  
+  /* Smooth Transition for Form Container */
+  form {
+    transform: scale(1);
+    opacity: 1;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Animation for form appearing */
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
